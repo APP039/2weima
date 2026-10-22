@@ -1,0 +1,10 @@
+Font: 白路彤彤手写体 / bailutongtongshouxieti
+Copyright: bailu / 山人白路. Version 1.000.
+Released under the author's free commercial-use declaration (not SIL OFL).
+Original publication: https://www.zcool.com.cn/work/ZNjkxNjU3MzI=.html
+User-provided catalogue: https://ziyouziti.com/mianfeiziti-460.html
+Authorization reference: https://www.maoken.com/freefonts/22584.html
+The authorization reference states free commercial use and includes website and embedded web use.
+Font distribution source: https://fonts.zeoseven.com/items/279/
+Webfont parts: https://fontsapi.zeoseven.com/279/main/result.css
+Local webfont combines those parts without changing glyph outlines.

@@ -1,0 +1,12 @@
+import {build} from 'esbuild';
+import {mkdir,copyFile,readFile,writeFile} from 'node:fs/promises';
+await mkdir('dist/vendor',{recursive:true});
+await mkdir('dist/assets',{recursive:true});
+await mkdir('dist/assets/fonts',{recursive:true});
+for(const f of ['bobo-hand.woff2','OFL.txt']) await copyFile(`assets/fonts/${f}`,`dist/assets/fonts/${f}`);
+await copyFile('assets/pp-logo.png','dist/assets/pp-logo.png');
+await build({entryPoints:['src/app.js'],bundle:true,format:'esm',outfile:'dist/app.js',minify:true,sourcemap:false});
+for(const f of ['index.html','style.css','cute.css']) await copyFile(`src/${f}`,`dist/${f}`);
+await copyFile('node_modules/zxing-wasm/dist/reader/zxing_reader.wasm','dist/vendor/zxing_reader.wasm');
+await writeFile('dist/assets/third-party-licenses.txt','qrcode\n'+await readFile('node_modules/qrcode/license','utf8')+'\n\nzxing-wasm\n'+await readFile('node_modules/zxing-wasm/LICENSE','utf8'));
+console.log('Built dist/ with local WASM decoder.');

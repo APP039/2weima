@@ -1,0 +1,19 @@
+{
+  "name": "qr-blend-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node serve.mjs"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4",
+    "zxing-wasm": "2.2.4"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "0.1.80",
+    "esbuild": "0.25.12"
+  }
+}
