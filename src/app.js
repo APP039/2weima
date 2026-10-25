@@ -72,7 +72,7 @@ async function shareCard(){
   g.fillText('原始二维码',70,955);g.fillText('码上不一样',820,955);
   g.font='20px KNBobohei';g.fillStyle='#8877aa';
   g.fillText('软件校验通过 · 手机微信请实扫确认',70,1025);
-  g.fillText('你的需求、麻烦和脑洞，我都想听听',820,1025);
+  g.fillText('专业回收：野生脑洞、日常麻烦、工具需求 ♻️',820,1025);
   g.save();g.translate(1403,1017);g.rotate(-.045);
   g.fillStyle='#decdeb';g.beginPath();g.roundRect(-126,-29,252,65,15);g.fill();
   g.fillStyle='#fce5f2';g.strokeStyle='#d5acd8';g.lineWidth=2;
